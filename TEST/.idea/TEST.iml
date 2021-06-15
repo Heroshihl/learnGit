@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/highconcurrency/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/object/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fileprograme/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/senior/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/proclass/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/prothread/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/designpatterns23/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/socket/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rmi/src.main.java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rmi/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rpc/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/staticlass/src/main/java" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="mail" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.16/lombok-1.18.16.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="fastjson-1.2.73" level="project" />
+  </component>
+</module>
