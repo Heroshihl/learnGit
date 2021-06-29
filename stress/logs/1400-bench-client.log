@@ -1,0 +1,149 @@
+2021-06-29 11:22:35.953  INFO 12964 --- [main] c.s.s.StressTestingApplication           : Starting StressTestingApplication using Java 11.0.8 on shihualei with PID 12964 (E:\ideatest\stress\target\classes started by 石华磊 in E:\ideatest\stress)
+2021-06-29 11:22:35.954  INFO 12964 --- [main] c.s.s.StressTestingApplication           : No active profile set, falling back to default profiles: default
+2021-06-29 11:22:37.268  INFO 12964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-29 11:22:37.283  INFO 12964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-29 11:22:37.285  INFO 12964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-06-29 11:22:37.436  INFO 12964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-29 11:22:37.436  INFO 12964 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1423 ms
+2021-06-29 11:22:37.829  INFO 12964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-29 11:22:37.849  INFO 12964 --- [main] c.s.s.StressTestingApplication           : Started StressTestingApplication in 2.613 seconds (JVM running for 5.116)
+2021-06-29 11:22:37.851  INFO 12964 --- [main] c.s.s.StressTestingApplication           : threadCount : 10
+2021-06-29 11:22:37.852  INFO 12964 --- [main] c.s.s.StressTestingApplication           : url : http://192.168.50.86:8080/VIID/Images/<ID>/Info
+2021-06-29 11:22:37.852  INFO 12964 --- [main] c.s.s.StressTestingApplication           : runCount : 10000
+2021-06-29 11:22:37.852  INFO 12964 --- [main] c.s.s.StressTestingApplication           : jsonFile : ./json.txt
+2021-06-29 11:22:37.852  INFO 12964 --- [main] c.s.s.StressTestingApplication           : method : put
+2021-06-29 11:22:37.858  INFO 12964 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-06-29 11:22:37.907 ERROR 12964 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:785) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:345) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.2.jar:2.5.2]
+	at com.shihl.stress_testing.StressTestingApplication.main(StressTestingApplication.java:42) ~[classes/:na]
+Caused by: java.lang.RuntimeException: java.nio.file.NoSuchFileException: .\json.txt
+	at com.shihl.stress_testing.StressTestingApplication.readJsonFromFile(StressTestingApplication.java:110) ~[classes/:na]
+	at com.shihl.stress_testing.StressTestingApplication.run(StressTestingApplication.java:55) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:782) ~[spring-boot-2.5.2.jar:2.5.2]
+	... 5 common frames omitted
+Caused by: java.nio.file.NoSuchFileException: .\json.txt
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[na:na]
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[na:na]
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[na:na]
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235) ~[na:na]
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:370) ~[na:na]
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:421) ~[na:na]
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3205) ~[na:na]
+	at java.base/java.nio.file.Files.readString(Files.java:3283) ~[na:na]
+	at java.base/java.nio.file.Files.readString(Files.java:3242) ~[na:na]
+	at com.shihl.stress_testing.StressTestingApplication.readJsonFromFile(StressTestingApplication.java:108) ~[classes/:na]
+	... 7 common frames omitted
+
+2021-06-29 11:27:03.973  INFO 10004 --- [main] c.s.s.StressTestingApplication           : Starting StressTestingApplication using Java 11.0.8 on shihualei with PID 10004 (E:\ideatest\stress\target\classes started by 石华磊 in E:\ideatest\stress)
+2021-06-29 11:27:03.976  INFO 10004 --- [main] c.s.s.StressTestingApplication           : No active profile set, falling back to default profiles: default
+2021-06-29 11:27:04.647  INFO 10004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-29 11:27:04.656  INFO 10004 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-29 11:27:04.656  INFO 10004 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-06-29 11:27:04.739  INFO 10004 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-29 11:27:04.740  INFO 10004 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 720 ms
+2021-06-29 11:27:04.944  INFO 10004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-29 11:27:04.954  INFO 10004 --- [main] c.s.s.StressTestingApplication           : Started StressTestingApplication in 1.361 seconds (JVM running for 2.775)
+2021-06-29 11:27:04.956  INFO 10004 --- [main] c.s.s.StressTestingApplication           : threadCount : 10
+2021-06-29 11:27:04.957  INFO 10004 --- [main] c.s.s.StressTestingApplication           : url : http://192.168.50.86:8080/VIID/Images/<ID>/Info
+2021-06-29 11:27:04.957  INFO 10004 --- [main] c.s.s.StressTestingApplication           : runCount : 10000
+2021-06-29 11:27:04.957  INFO 10004 --- [main] c.s.s.StressTestingApplication           : jsonFile : json.txt
+2021-06-29 11:27:04.957  INFO 10004 --- [main] c.s.s.StressTestingApplication           : method : put
+2021-06-29 11:27:04.960  INFO 10004 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-06-29 11:27:04.977 ERROR 10004 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:785) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:345) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.2.jar:2.5.2]
+	at com.shihl.stress_testing.StressTestingApplication.main(StressTestingApplication.java:42) ~[classes/:na]
+Caused by: java.lang.RuntimeException: java.nio.file.NoSuchFileException: json.txt
+	at com.shihl.stress_testing.StressTestingApplication.readJsonFromFile(StressTestingApplication.java:110) ~[classes/:na]
+	at com.shihl.stress_testing.StressTestingApplication.run(StressTestingApplication.java:55) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:782) ~[spring-boot-2.5.2.jar:2.5.2]
+	... 5 common frames omitted
+Caused by: java.nio.file.NoSuchFileException: json.txt
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[na:na]
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[na:na]
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[na:na]
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235) ~[na:na]
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:370) ~[na:na]
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:421) ~[na:na]
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3205) ~[na:na]
+	at java.base/java.nio.file.Files.readString(Files.java:3283) ~[na:na]
+	at java.base/java.nio.file.Files.readString(Files.java:3242) ~[na:na]
+	at com.shihl.stress_testing.StressTestingApplication.readJsonFromFile(StressTestingApplication.java:108) ~[classes/:na]
+	... 7 common frames omitted
+
+2021-06-29 11:28:09.458  INFO 7332 --- [main] c.s.s.StressTestingApplication           : Starting StressTestingApplication using Java 11.0.8 on shihualei with PID 7332 (E:\ideatest\stress\target\classes started by 石华磊 in E:\ideatest\stress)
+2021-06-29 11:28:09.465  INFO 7332 --- [main] c.s.s.StressTestingApplication           : No active profile set, falling back to default profiles: default
+2021-06-29 11:28:10.117  INFO 7332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-29 11:28:10.126  INFO 7332 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-29 11:28:10.126  INFO 7332 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-06-29 11:28:10.212  INFO 7332 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-29 11:28:10.213  INFO 7332 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 708 ms
+2021-06-29 11:28:10.414  INFO 7332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-29 11:28:10.423  INFO 7332 --- [main] c.s.s.StressTestingApplication           : Started StressTestingApplication in 1.352 seconds (JVM running for 2.776)
+2021-06-29 11:28:10.425  INFO 7332 --- [main] c.s.s.StressTestingApplication           : threadCount : 10
+2021-06-29 11:28:10.426  INFO 7332 --- [main] c.s.s.StressTestingApplication           : url : http://192.168.50.86:8080/VIID/Images/<ID>/Info
+2021-06-29 11:28:10.427  INFO 7332 --- [main] c.s.s.StressTestingApplication           : runCount : 10000
+2021-06-29 11:28:10.427  INFO 7332 --- [main] c.s.s.StressTestingApplication           : jsonFile : E:/ideatest/stress/src/main/resources/json.txt
+2021-06-29 11:28:10.427  INFO 7332 --- [main] c.s.s.StressTestingApplication           : method : put
+2021-06-29 11:28:10.428  INFO 7332 --- [Thread-1] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@39bb9ea1[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2021-06-29 11:28:11.435  INFO 7332 --- [Thread-1] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@39bb9ea1[Running, pool size = 10, active threads = 10, queued tasks = 2, completed tasks = 139]
+2021-06-29 11:28:12.441  INFO 7332 --- [Thread-1] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@39bb9ea1[Running, pool size = 10, active threads = 10, queued tasks = 6, completed tasks = 648]
+2021-06-29 11:28:13.448  INFO 7332 --- [Thread-1] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@39bb9ea1[Running, pool size = 10, active threads = 10, queued tasks = 8, completed tasks = 1242]
+2021-06-29 11:28:14.454  INFO 7332 --- [Thread-1] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@39bb9ea1[Running, pool size = 10, active threads = 10, queued tasks = 9, completed tasks = 1852]
+2021-06-29 11:28:15.459  INFO 7332 --- [Thread-1] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@39bb9ea1[Running, pool size = 10, active threads = 10, queued tasks = 1, completed tasks = 2704]
+2021-06-29 11:28:16.464  INFO 7332 --- [Thread-1] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@39bb9ea1[Running, pool size = 10, active threads = 10, queued tasks = 0, completed tasks = 3637]
+2021-06-29 11:28:17.475  INFO 7332 --- [Thread-1] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@39bb9ea1[Running, pool size = 10, active threads = 10, queued tasks = 7, completed tasks = 4611]
+2021-06-29 11:28:18.488  INFO 7332 --- [Thread-1] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@39bb9ea1[Running, pool size = 10, active threads = 10, queued tasks = 10, completed tasks = 5496]
+2021-06-29 11:28:19.494  INFO 7332 --- [Thread-1] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@39bb9ea1[Running, pool size = 10, active threads = 1, queued tasks = 0, completed tasks = 5973]
+2021-06-29 11:28:20.506  INFO 7332 --- [Thread-1] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@39bb9ea1[Running, pool size = 10, active threads = 10, queued tasks = 10, completed tasks = 6671]
+2021-06-29 11:28:21.511  INFO 7332 --- [Thread-1] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@39bb9ea1[Running, pool size = 10, active threads = 10, queued tasks = 4, completed tasks = 7922]
+2021-06-29 11:28:22.465  INFO 7332 --- [main] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@39bb9ea1[Running, pool size = 10, active threads = 0, queued tasks = 0, completed tasks = 9067]
+2021-06-29 11:28:22.467  INFO 7332 --- [main] c.s.s.StressTestingApplication           : 测试结束........................
+2021-06-29 11:28:22.467  INFO 7332 --- [main] c.s.s.StressTestingApplication           : 总次数 : 10000
+2021-06-29 11:28:22.467  INFO 7332 --- [main] c.s.s.StressTestingApplication           : 成功次数 : 10000
+2021-06-29 11:28:22.467  INFO 7332 --- [main] c.s.s.StressTestingApplication           : 失败次数 :0
+2021-06-29 11:28:22.467  INFO 7332 --- [main] c.s.s.StressTestingApplication           : 秒数 : 12.039
+2021-06-29 11:28:22.468  INFO 7332 --- [main] c.s.s.StressTestingApplication           : 并发/每秒 : 830.6337735692333
+2021-06-29 11:28:22.525  INFO 7332 --- [Thread-1] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@39bb9ea1[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 9067]
+2021-06-29 11:31:16.312  INFO 8564 --- [main] c.s.s.StressTestingApplication           : Starting StressTestingApplication using Java 11.0.8 on shihualei with PID 8564 (E:\ideatest\stress\target\classes started by 石华磊 in E:\ideatest\stress)
+2021-06-29 11:31:16.319  INFO 8564 --- [main] c.s.s.StressTestingApplication           : No active profile set, falling back to default profiles: default
+2021-06-29 11:31:17.005  INFO 8564 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-29 11:31:17.015  INFO 8564 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-29 11:31:17.015  INFO 8564 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-06-29 11:31:17.096  INFO 8564 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-29 11:31:17.096  INFO 8564 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 728 ms
+2021-06-29 11:31:17.300  INFO 8564 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-29 11:31:17.310  INFO 8564 --- [main] c.s.s.StressTestingApplication           : Started StressTestingApplication in 1.428 seconds (JVM running for 2.894)
+2021-06-29 11:31:17.312  INFO 8564 --- [main] c.s.s.StressTestingApplication           : threadCount : 10
+2021-06-29 11:31:17.313  INFO 8564 --- [main] c.s.s.StressTestingApplication           : url : http://192.168.50.86:8080/VIID/Images/<ID>/Info
+2021-06-29 11:31:17.313  INFO 8564 --- [main] c.s.s.StressTestingApplication           : runCount : 10000
+2021-06-29 11:31:17.313  INFO 8564 --- [main] c.s.s.StressTestingApplication           : jsonFile : E:/ideatest/stress/src/main/resources/json.txt
+2021-06-29 11:31:17.313  INFO 8564 --- [main] c.s.s.StressTestingApplication           : method : put
+2021-06-29 11:31:17.314  INFO 8564 --- [Thread-1] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@b723660[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2021-06-29 11:31:18.323  INFO 8564 --- [Thread-1] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@b723660[Running, pool size = 10, active threads = 10, queued tasks = 1, completed tasks = 880]
+2021-06-29 11:31:19.337  INFO 8564 --- [Thread-1] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@b723660[Running, pool size = 10, active threads = 10, queued tasks = 10, completed tasks = 3120]
+2021-06-29 11:31:20.345  INFO 8564 --- [Thread-1] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@b723660[Running, pool size = 10, active threads = 10, queued tasks = 2, completed tasks = 5302]
+2021-06-29 11:31:21.357  INFO 8564 --- [Thread-1] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@b723660[Running, pool size = 10, active threads = 10, queued tasks = 9, completed tasks = 7435]
+2021-06-29 11:31:22.010  INFO 8564 --- [main] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@b723660[Running, pool size = 10, active threads = 0, queued tasks = 0, completed tasks = 9097]
+2021-06-29 11:31:22.013  INFO 8564 --- [main] c.s.s.StressTestingApplication           : 测试结束........................
+2021-06-29 11:31:22.013  INFO 8564 --- [main] c.s.s.StressTestingApplication           : 总次数 : 10000
+2021-06-29 11:31:22.013  INFO 8564 --- [main] c.s.s.StressTestingApplication           : 成功次数 : 10000
+2021-06-29 11:31:22.013  INFO 8564 --- [main] c.s.s.StressTestingApplication           : 失败次数 :0
+2021-06-29 11:31:22.013  INFO 8564 --- [main] c.s.s.StressTestingApplication           : 秒数 : 4.699
+2021-06-29 11:31:22.014  INFO 8564 --- [main] c.s.s.StressTestingApplication           : 并发/每秒 : 2128.112364332837
+2021-06-29 11:31:22.371  INFO 8564 --- [Thread-1] c.s.s.StressTestingApplication           : taskExecutor : java.util.concurrent.ThreadPoolExecutor@b723660[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 9097]

@@ -1,0 +1,1 @@
+{"ImageInfoObject":{"InfoKind":1,"ImageSource":"99","StoragePath":"http://192.168.50.102:8093/test.jpg","ShotTime":"20160612103006","ShotPlaceFullAdress":"0606IPC","FileFormat":"Jpeg","Title":"测试图","ContentDescription":"测试用的哇","Width":100,"Height":78,"SecurityLevel":5}}
